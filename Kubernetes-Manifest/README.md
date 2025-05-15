@@ -1,5 +1,37 @@
 # Uptime - Cronjob & Monitoring software
 
+🛠️ Installation Options
+<strong>Deploy on Kubernetes</stromg>
+
+1. Clone the Repository
+
+    git clone https://github.com/niketchandra/UpTime-App.git
+
+2. Apply the Manifests
+
+    kubectl apply -f ./Kubernetes-Manifest
+
+3. Access the Application
+
+    kubectl get svc
+
+Use the assigned LoadBalancer
+
+<stromg>Run with Docker Compose</stromg>
+
+1. Clone the Repository
+
+    git clone https://github.com/niketchandra/UpTime-App.git
+    cd UpTime-App
+
+2. Start the Containers
+
+    docker-compose up -d
+
+3. Open in Browser
+    
+    Visit: http://localhost:8080
+
 ![image](https://github.com/user-attachments/assets/97f3bbce-68b6-4fe5-a014-aac50f13573f)
 
 ![image](https://github.com/user-attachments/assets/d440b54c-9d24-47bc-8651-7834343d1eb4)
