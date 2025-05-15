@@ -23,7 +23,7 @@ RUN apk update && apk add --no-cache \
     && rm -rf /var/cache/apk/*
 
 # Copy application files
-COPY ./66uptime /var/www/localhost/htdocs/
+COPY ./uptime /var/www/localhost/htdocs/
 
 # Remove default index.html
 RUN rm -f /var/www/localhost/htdocs/index.html
