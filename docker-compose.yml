@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: my-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: myrootpass
+      MYSQL_DATABASE: myappdb
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"
+
+
+  php:
+    image: niketchandra/66uptime:v1
+    container_name: uptime
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      DATABASE_SERVER: mysql
+      DATABASE_USERNAME: myuser
+      DATABASE_PASSWORD: mypassword
+      DATABASE_NAME: myappdb
+    ports:
+      - "8080:80"

@@ -1,0 +1,18 @@
+FROM php:8.2-fpm-alpine
+
+# Install PHP-FPM and extensions + supervisor
+RUN docker-php-ext-install pdo pdo_mysql mysqli
+
+# Make php command available
+RUN ln -s /usr/bin/php82 /usr/bin/php
+
+# Prepare web root
+# RUN mkdir -p /usr/share/nginx/html
+COPY ./66uptime /var/www/html
+RUN rm -f /var/www/html/index.html
+# RUN chown -R nginx:nginx /var/www/html
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 /var/www/html
+
+# Set working directory
+WORKDIR /var/www/html

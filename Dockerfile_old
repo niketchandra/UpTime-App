@@ -1,0 +1,44 @@
+FROM alpine:latest
+
+# Install Apache, PHP 8.2, and required PHP extensions
+RUN apk update && apk add --no-cache \
+    apache2 \
+    php82 \
+    php82-apache2 \
+    php82-mysqli \
+    php82-pdo \
+    php82-pdo_mysql \
+    php82-session \
+    php82-opcache \
+    php82-mbstring \
+    php82-zlib \
+    php82-curl \
+    php82-json \
+    php82-phar \
+    php82-dom \
+    php82-fileinfo \
+    php82-tokenizer \
+    php82-ctype \
+    php82-simplexml \
+    && rm -rf /var/cache/apk/*
+
+# Copy your PHP project into the correct directory
+COPY ./66uptime /var/www/localhost/htdocs/
+COPY ./000-default.conf /etc/apache2/sites-enabled/000-default.conf
+# Remove the default index.html (if exists)
+RUN rm -f /var/www/localhost/htdocs/index.html
+
+# Set correct permissions for your project
+RUN chown -R apache:apache /var/www/localhost/htdocs && chmod -R 755 /var/www/localhost/htdocs
+
+# Ensure Apache serves PHP correctly
+RUN echo "LoadModule php_module modules/libphp.so" >> /etc/apache2/httpd.conf && \
+    echo "AddHandler php-script .php" >> /etc/apache2/httpd.conf && \
+    echo "Include /etc/apache2/conf.d/*.conf" >> /etc/apache2/httpd.conf && \
+    echo "DirectoryIndex index.php index.html" >> /etc/apache2/httpd.conf
+
+# Expose Apache HTTP port
+EXPOSE 80
+
+# Start Apache in foreground
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
