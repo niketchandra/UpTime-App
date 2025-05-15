@@ -1,2 +1,4 @@
-# uptime/app/*
-uptime/*
+uptime/app/*
+uptime/install/*
+uptime/vendor/*
+uptime/uploads/*
