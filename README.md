@@ -1,5 +1,24 @@
 # Uptime - Cronjob & Monitoring software
 
+UpTime-App
+UpTime-App is a lightweight, self-hosted uptime monitoring platform built for SREs, developers, and teams who want full visibility into their applications without relying on expensive third-party tools.
+
+This repository provides everything needed to deploy and run your own uptime monitoring system on Kubernetes or via Docker, enabling real-time health checks, status pages, and multi-channel notifications.
+
+🚀 Features
+✅ Website, Server & Cron Monitoring
+
+🔒 SSL, Domain & DNS Expiry Checks
+
+📈 Status Pages (Private or Public)
+
+🧠 Admin Dashboard with Analytics
+
+📣 Multi-Channel Alerts
+
+📦 Docker & Kubernetes Deployment
+
+⚙️ Built-in Tools: Ping, DNS, HTTP headers, SSL check
 
 🛠️ Installation Options
 
