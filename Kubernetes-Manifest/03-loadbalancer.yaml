@@ -6,7 +6,7 @@ metadata:
     app: uptime
     env: test
 spec:
-  type: LoadBalancer
+  type: LoadBalancer # if you are using nginx ingress controller, you can use NodePort
   selector:
     app: uptime
     env: test
