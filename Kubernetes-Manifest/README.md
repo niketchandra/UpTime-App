@@ -8,7 +8,7 @@
 git clone https://github.com/niketchandra/UpTime-App.git
 
 ```
-###  2. (Optional) Update Ingress Configuration
+###  2. (Optional Step) Update Ingress Configuration
 ```bash
 cd Kubernetes-Manifest
 vi 04-ingress.yaml
@@ -19,6 +19,23 @@ Update line no. 10
 Replace monitor.abc.live with your custom domain name
 
 Save the file
+
+###  2.1 (Optional Step) Deploy Ingress controller your in local cluster
+
+```bash
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+
+helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx \
+  --namespace ingress-basic \
+  --create-namespace
+```
+🧪 Verify Installation
+```bash
+kubectl get svc -n ingress-basic
+kubectl get pods -n ingress-basic
+kubectl get ValidatingWebhookConfiguration | grep nginx
+```
 
 ### 3. Apply the Manifests
 
