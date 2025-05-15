@@ -2,12 +2,13 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "dev" ]
     paths-ignore:
       - 'Kubernetes-Manifest/**'
+      - 'Other/**'
       - 'VERSION'    
   pull_request:
-    branches: [ "main" ]
+    branches: [ "dev" ]
 
 jobs:
 
