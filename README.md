@@ -2,39 +2,7 @@
 
 
 🛠️ Installation Options
-Option 1: Deploy on Kubernetes
-Clone the Repository
 
-bash
-Copy
-Edit
-git clone https://github.com/niketchandra/UpTime-App.git
-cd UpTime-App/Kubernetes-Manifest
-Apply the Manifests
-
-bash
-Copy
-Edit
-kubectl apply -f .
-Access the Application
-Use the assigned LoadBalancer or Ingress address to reach the app.
-
-Option 2: Run with Docker Compose
-Clone the Repository
-
-bash
-Copy
-Edit
-git clone https://github.com/niketchandra/UpTime-App.git
-cd UpTime-App
-Start the Containers
-
-bash
-Copy
-Edit
-docker-compose up -d
-Open in Browser
-Visit: http://localhost:8080
 ![image](https://github.com/user-attachments/assets/97f3bbce-68b6-4fe5-a014-aac50f13573f)
 
 ![image](https://github.com/user-attachments/assets/d440b54c-9d24-47bc-8651-7834343d1eb4)
