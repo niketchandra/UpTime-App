@@ -20,7 +20,7 @@ Replace monitor.abc.live with your custom domain name
 
 Save the file
 
-###  2.1 (Optional Step) Deploy Ingress controller your in local cluster
+###  2.1 (Optional Step) Deploy Ingress controller on your local cluster
 
 ```bash
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
