@@ -25,7 +25,8 @@ Save the file
 ```bash
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
-
+```
+```bash
 helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx \
   --namespace ingress-basic \
   --create-namespace
