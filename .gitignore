@@ -1,4 +1,2 @@
-# uptime/app/*
-# uptime/install/*
-uptime/vendor/*
-# uptime/uploads/*
+Dockerfile
+uptime/*
