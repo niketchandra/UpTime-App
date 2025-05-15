@@ -15,7 +15,7 @@ services:
 
 
   php:
-    image: niketchandra/66uptime:v1
+    image: niketchandra/uptime:v1
     container_name: uptime
     restart: always
     depends_on:
