@@ -20,8 +20,6 @@ This repository provides everything needed to deploy and run your own uptime mon
 
 ⚙️ Built-in Tools: Ping, DNS, HTTP headers, SSL check
 
-🛠️ Installation Options
-
 ![image](https://github.com/user-attachments/assets/97f3bbce-68b6-4fe5-a014-aac50f13573f)
 
 ![image](https://github.com/user-attachments/assets/d440b54c-9d24-47bc-8651-7834343d1eb4)
