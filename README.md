@@ -5,6 +5,8 @@ UpTime-App is a lightweight, self-hosted uptime monitoring platform built for SR
 
 This repository provides everything needed to deploy and run your own uptime monitoring system on Kubernetes or via Docker, enabling real-time health checks, status pages, and multi-channel notifications.
 
+🛠️ Installation Options --> https://github.com/niketchandra/UpTime-App/tree/main/Kubernetes-Manifest
+
 🚀 Features
 ✅ Website, Server & Cron Monitoring
 
