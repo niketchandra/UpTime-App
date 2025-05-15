@@ -1,4 +1,4 @@
-# uptime - Cronjob & Monitoring software
+# Uptime - Cronjob & Monitoring software
 ![image](https://github.com/user-attachments/assets/97f3bbce-68b6-4fe5-a014-aac50f13573f)
 
 ![image](https://github.com/user-attachments/assets/d440b54c-9d24-47bc-8651-7834343d1eb4)
