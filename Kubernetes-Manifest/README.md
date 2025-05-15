@@ -10,6 +10,7 @@
 
 2. Apply the Manifests
    <br>
+   <br>
     kubectl create ns uptime <br>
     kubectl apply -f .\Kubernetes-Manifest\ -n uptime
 
@@ -18,6 +19,7 @@
     kubectl get svc
 
 Use the assigned LoadBalancer
+
 
 --------------------------------------------------------------------------------------------
 
@@ -34,5 +36,5 @@ Use the assigned LoadBalancer
 
 3. Open in Browser
     
-    Visit: http://localhost:8080
+    Visit: http://localhost:8080/install
 
