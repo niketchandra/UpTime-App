@@ -18,7 +18,9 @@
 
 Use the assigned LoadBalancer
 
-<stromg>Run with Docker Compose</stromg>
+<ln>
+
+<stromg>Deploy with Docker Compose</stromg>
 
 1. Clone the Repository
 
