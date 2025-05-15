@@ -25,8 +25,9 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}    
     - name: Build the Docker image
       run: |
-        docker build --tag niketchandra/uptime:test-$(date +%s) .
-        docker push niketchandra/uptime:test-$(date +%s)
+        stime="$(date +%s)"
+        docker build --tag niketchandra/uptime:test_$stime .
+        docker push niketchandra/uptime:test_$stime
     - name: Docker logout
       run: | 
         docker logout  
