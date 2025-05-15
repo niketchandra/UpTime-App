@@ -27,7 +27,7 @@ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 ```
 
-## helm upgrade --install ingress-uptime ingress-nginx/ingress-nginx --namespace uptime --create-namespace
+helm upgrade --install ingress-uptime ingress-nginx/ingress-nginx --namespace uptime --create-namespace
 
 ```bash
 helm install ingress-uptime ingress-nginx/ingress-nginx --namespace uptime --create-namespace --set controller.ingressClass=nginx-
