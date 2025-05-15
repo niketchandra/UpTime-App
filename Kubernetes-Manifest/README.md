@@ -1,47 +1,76 @@
-# Uptime - Cronjob & Monitoring software
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🛠️ UpTime App - Installation Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    h2 {
+      color: #2980b9;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
 
-🛠️ Installation Options
+  <h1>🛠️ Installation Options</h1>
 
-<strong>Deploy on Kubernetes</stromg>
+  <div class="section">
+    <h2>🚀 Deploy on Kubernetes</h2>
 
-1. Clone the Repository
+    <h3>1. Clone the Repository</h3>
+    <pre><code>git clone https://github.com/niketchandra/UpTime-App.git</code></pre>
 
-    git clone https://github.com/niketchandra/UpTime-App.git<br>
-    
-    OPTIONAL STEP
+    <h3>2. Optional: Update Ingress Domain</h3>
+    <pre><code>cd Kubernetes-Manifest
+vi 04-ingress.yaml</code></pre>
+    <p>Update <strong>line no. 10</strong>:</p>
+    <p>Replace <code>monitor.abc.live</code> with your actual domain name and <strong>SAVE</strong>.</p>
 
-    cd Kubernetes-Manifest<br>
-    vi 04-ingress.yaml<br>
-    update line no. 10<br>
-    Replace "monitor.abc.live" with your domain name and SAVE
+    <h3>3. Apply the Manifests</h3>
+    <pre><code>kubectl create ns uptime
+kubectl apply -f .\Kubernetes-Manifest\ -n uptime</code></pre>
 
-2. Apply the Manifests
-   <br>
-   <br>
-    kubectl create ns uptime <br>
-    kubectl apply -f .\Kubernetes-Manifest\ -n uptime
+    <h3>4. Access the Application</h3>
+    <pre><code>kubectl get svc</code></pre>
+    <p>Use the assigned <strong>LoadBalancer</strong> address to access the app.</p>
+  </div>
 
-4. Access the Application
-    
-    kubectl get svc
+  <div class="section">
+    <h2>🐳 Deploy with Docker Compose</h2>
 
-Use the assigned LoadBalancer
+    <h3>1. Clone the Repository</h3>
+    <pre><code>git clone https://github.com/niketchandra/UpTime-App.git
+cd UpTime-App</code></pre>
 
+    <h3>2. Start the Containers</h3>
+    <pre><code>docker-compose up -d</code></pre>
 
---------------------------------------------------------------------------------------------
+    <h3>3. Open in Browser</h3>
+    <p>Visit: <a href="http://localhost:8080/install" target="_blank">http://localhost:8080/install</a></p>
+  </div>
 
-<stromg>Deploy with Docker Compose</stromg>
-
-1. Clone the Repository
-
-    git clone https://github.com/niketchandra/UpTime-App.git
-    <br> cd UpTime-App
-
-2. Start the Containers
-
-    docker-compose up -d
-
-3. Open in Browser
-    
-    Visit: http://localhost:8080/install
-
+</body>
+</html>
