@@ -9,10 +9,11 @@
     git clone https://github.com/niketchandra/UpTime-App.git
 
 2. Apply the Manifests
+   <br>
     kubectl create ns uptime <br>
     kubectl apply -f .\Kubernetes-Manifest\ -n uptime
 
-3. Access the Application
+4. Access the Application
 
     kubectl get svc
 
