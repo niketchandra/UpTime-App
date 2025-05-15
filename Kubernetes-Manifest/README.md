@@ -8,12 +8,12 @@
 
     git clone https://github.com/niketchandra/UpTime-App.git<br>
     
-    <OPTIONAL STEP>
+    OPTIONAL STEP
 
     cd Kubernetes-Manifest<br>
     vi 04-ingress.yaml<br>
     update line no. 10<br>
-    Replace "monitor.abc.live" with your domain name and <SAVE>
+    Replace "monitor.abc.live" with your domain name and SAVE
 
 2. Apply the Manifests
    <br>
