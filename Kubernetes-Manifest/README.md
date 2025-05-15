@@ -25,7 +25,7 @@ Use the assigned LoadBalancer
 1. Clone the Repository
 
     git clone https://github.com/niketchandra/UpTime-App.git
-    cd UpTime-App
+    <be> cd UpTime-App
 
 2. Start the Containers
 
