@@ -18,7 +18,7 @@
 
 Use the assigned LoadBalancer
 
-<ln>
+--------------------------------------------------------------------------------------------
 
 <stromg>Deploy with Docker Compose</stromg>
 
