@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uptime-v1
+  labels:
+    app: uptime
+    env: test
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: uptime
+      env: test
+  template:
+    metadata:
+      labels:
+        app: uptime
+        env: test
+    spec:
+      containers:
+      - name: uptime-test
+        image: niketchandra/66uptime:v1
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "250m"
+        env:
+        - name: DATABASE_SERVER
+          value: mysql-service
+        - name: DATABASE_USERNAME
+          value: root
+        - name: DATABASE_PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: mysql-db-password
+              key: db-password
+        - name: DATABASE_NAME
+          value: uptime
