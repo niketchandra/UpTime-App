@@ -10,7 +10,7 @@
 
 2. Apply the Manifests
 
-    kubectl apply -f ./Kubernetes-Manifest
+    kubectl apply -f .\Kubernetes-Manifest\
 
 3. Access the Application
 
