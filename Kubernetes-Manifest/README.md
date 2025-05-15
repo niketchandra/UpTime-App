@@ -27,7 +27,7 @@ kubectl create ns uptime
 kubectl apply -f ./Kubernetes-Manifest/ -n uptime
 ```
 
- 4. Access the Application
+### 4. Access the Application
 
 ```bash
 kubectl get svc
