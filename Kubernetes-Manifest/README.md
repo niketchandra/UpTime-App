@@ -2,10 +2,14 @@
 
 🚀 Uptime Helm Chart Deployment
 
-📥 Clone the Repository
+📦 Download the Chart Package
+
+Go to the [Releases page](https://github.com/niketchandra/UpTime-App/releases)
+
+Or use wget to download via CLI:
+
 ```
-git clone https://github.com/niketchandra/UpTime-App.git
-cd UpTime-App/uptime-chart
+wget https://github.com/niketchandra/UpTime-App/releases/download/v0.1.0/uptime-0.1.0.tgz
 ```
 
 ⚙️ Installing the Helm Chart
