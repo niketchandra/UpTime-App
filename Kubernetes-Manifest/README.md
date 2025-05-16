@@ -24,7 +24,7 @@ Replace monitor.local with your_domain.local with your actual domain:
 ```
 helm install uptime-chart ./uptime-chart -n uptime \
   --set ingress.enabled=true \
-  --set ingress.domain=shop4you.live
+  --set ingress.domain=monitor.local
 ```
 --------------------------------------------------------------------
 
