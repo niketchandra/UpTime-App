@@ -1,5 +1,33 @@
 # 🛠️ UpTime App - Installation Guide
 
+🚀 Uptime Helm Chart Deployment
+
+📥 Clone the Repository
+```
+git clone https://github.com/niketchandra/UpTime-App.git
+cd UpTime-App/uptime-chart
+```
+
+⚙️ Installing the Helm Chart
+Make sure your Kubernetes cluster is running and Helm is installed.
+
+Create Namespace
+
+`kubectl create namespace uptime`
+
+🔧 Basic Install (without Ingress)
+`helm install uptime-chart ./uptime-chart -n uptime`
+
+🌐 Install with Ingress
+Replace monitor.local with your_domain.local with your actual domain:
+
+```
+helm install uptime-chart ./uptime-chart -n uptime \
+  --set ingress.enabled=true \
+  --set ingress.domain=shop4you.live
+```
+--------------------------------------------------------------------
+
 ## 🚀 Deploy on Kubernetes
 
 ### 1. Clone the Repository
