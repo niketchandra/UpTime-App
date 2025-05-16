@@ -31,7 +31,7 @@ helm upgrade --install ingress-uptime ingress-nginx/ingress-nginx --namespace up
 
 ```bash
 helm install ingress-uptime ingress-nginx/ingress-nginx --namespace uptime --create-namespace --set controller.ingressClass=nginx-
-uptime --set controller.ingressClassResource.name=nginx-uptime --set controller.service.type=LoadBalancer
+uptime --set controller.ingressClassResource.name=nginx-uptime --set controller.service.type=LoadBalancer --set controller.service.loadBalancerIP=192.168.1.184
 ```
 🧪 Verify Installation
 ```bash
