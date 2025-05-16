@@ -1,6 +1,6 @@
 # 🛠️ UpTime App - Installation Guide
 
-🚀 Uptime Helm Chart Deployment
+🚀 Deploy using HELM on Kubernetes Cluter
 
 📦 Download the Chart Package
 
@@ -37,7 +37,7 @@ helm install uptime-chart ./uptime-chart -n uptime \
 ```
 --------------------------------------------------------------------
 
-## 🚀 Deploy on Kubernetes
+## 🚀 Deploy on Kubernetes Manually
 
 ### 1. Clone the Repository
 
@@ -95,6 +95,7 @@ Use the assigned LoadBalancer address to access the application
 --------------------------------------------------------------------
 
 🐳 Deploy with Docker Compose
+
 ### 1. Clone the Repository
 
 ```bash
