@@ -17,10 +17,15 @@ Make sure your Kubernetes cluster is running and Helm is installed.
 
 Create Namespace
 
-`kubectl create namespace uptime`
+```
+kubectl create namespace uptime`
+```
 
 🔧 Basic Install (without Ingress)
-`helm install uptime-chart ./uptime-chart -n uptime`
+
+```
+helm install uptime-chart ./uptime-chart -n uptime
+```
 
 🌐 Install with Ingress
 Replace monitor.local with your_domain.local with your actual domain:
