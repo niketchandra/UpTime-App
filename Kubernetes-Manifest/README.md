@@ -1,6 +1,6 @@
 # 🛠️ UpTime App - Installation Guide
 
-🚀 Deploy using HELM on Kubernetes Cluter
+🚀 Deploy using HELM on Kubernetes Cluster
 
 📦 Download the Chart Package
 
