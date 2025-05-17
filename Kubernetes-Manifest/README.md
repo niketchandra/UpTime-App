@@ -28,7 +28,7 @@ helm install uptime-chart ./uptime-chart -n uptime
 ```
 
 🌐 Install with Ingress
-Replace monitor.local with your_domain.local with your actual domain:
+Replace monitor.local with your actual domain eg. <your_domain.local>:
 
 ```
 helm install uptime-chart ./uptime-chart -n uptime \
