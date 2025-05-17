@@ -4,7 +4,7 @@
 
 📦 Download the Chart Package
 
-Go to the [Releases page](https://github.com/niketchandra/UpTime-App/releases)
+Go to the [Releases page](https://github.com/niketchandra/UpTime-App/releases) and download the release
 
 Or use wget to download via CLI:
 
